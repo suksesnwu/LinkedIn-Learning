@@ -30,29 +30,26 @@ namespace Algorithms
         {
             int max = a;
 
-            if (b > a)
+            if (b > max)
             {
-                return max = b;
+                max = b;
             }
 
-            if (c > a)
+            if (c > max)
             {
-                return max = c;
+                max = c;
             }
 
-            if (c > b)
-            {
-                return max = c;
-            }
+            return max;
         }
 
         static void Main(string[] args)
         {
-            Console.WriteLine(findMaximum(1, 2, 3));
-            Console.WriteLine(findMaximum(8, 8, 1));
-            Console.WriteLine(findMaximum(3, 2, 3));
-            Console.WriteLine(findMaximum(1, 1, 9));
-            Console.WriteLine(findMaximum(1, 9, 9));
+            Console.WriteLine(findMaximum2(1, 2, 3));
+            Console.WriteLine(findMaximum2(8, 8, 1));
+            Console.WriteLine(findMaximum2(3, 2, 3));
+            Console.WriteLine(findMaximum2(1, 1, 9));
+            Console.WriteLine(findMaximum2(1, 9, 9));
         }
     }
 }
