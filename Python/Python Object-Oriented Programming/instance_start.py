@@ -10,17 +10,18 @@ class Book:
         # TODO: add properties
         self.author = author
         self.pages = pages
-        self.price = price 
+        self.price = price
 
     # TODO: create instance methods
     def getprice(self):
-        if hasattr(self, "_discount")
+        if hasattr(self, "_discount"):
             return self.price - (self.price)
         else:
             return self.price
-    
+
     def discount(self, amount):
         self._discount = amount
+
 
 # TODO: create some book instances
 b1 = Book("War and Peace", "Leo Tolstoy", 1224, 39.95)
